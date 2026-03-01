@@ -1,0 +1,285 @@
+{
+  "cities": [
+    {
+      "city": "Delhi",
+      "state": "Delhi",
+      "lat": 28.6139,
+      "lng": 77.2090,
+      "visits": [
+        {
+          "date": "May 2021",
+          "title": "Senior Secondary Education",
+          "description": "Completed senior secondary education from The Adarsh School, CBSE Board.",
+          "type": "education",
+          "students": null
+        }
+      ]
+    },
+    {
+      "city": "Greater Noida",
+      "state": "Uttar Pradesh",
+      "lat": 28.4744,
+      "lng": 77.5040,
+      "visits": [
+        {
+          "date": "Sept 2021",
+          "title": "BTech in AI & Data Science",
+          "description": "Pursuing Bachelor's of Technology in Specialization of Artificial Intelligence and Data Science at IIMT College of Engineering (AKTU).",
+          "type": "education",
+          "students": null
+        },
+        {
+          "date": "Feb 2025",
+          "title": "Azure Sessions at Noida International University",
+          "description": "Delivered Azure sessions to 100+ students at Noida International University.",
+          "type": "professional",
+          "students": 100
+        }
+      ]
+    },
+    {
+      "city": "Hyderabad",
+      "state": "Telangana",
+      "lat": 17.3850,
+      "lng": 78.4867,
+      "visits": [
+        {
+          "date": "Feb 2023",
+          "title": "First Freelance Training - MongoDB",
+          "description": "Delivered Technical Training on MongoDB to 150+ students at KLH University, Hyderabad.",
+          "type": "professional",
+          "students": 150
+        },
+        {
+          "date": "Aug 2024",
+          "title": "Team Lead - DSA & OOPs Training",
+          "description": "Led a team of 15+ trainers at GNI University, Hyderabad delivering training on Data Structures and OOPs to 250+ students.",
+          "type": "professional",
+          "students": 250
+        },
+        {
+          "date": "Dec 2025",
+          "title": "Advanced Analytics (Databricks/Azure)",
+          "description": "Delivered sessions on Advanced Data Analytics using Databricks, Azure, Data Lake, and Snowflake.",
+          "type": "professional",
+          "students": 100
+        }
+      ]
+    },
+    {
+      "city": "Bengaluru",
+      "state": "Karnataka",
+      "lat": 12.9716,
+      "lng": 77.5946,
+      "visits": [
+        {
+          "date": "June 2023",
+          "title": "Azure Training at Reva University",
+          "description": "Delivered session on Azure computing resources at Reva University, Bengaluru to 200+ students.",
+          "type": "professional",
+          "students": 200
+        },
+        {
+          "date": "Oct 2023",
+          "title": "PowerBI Workshop at Christ University",
+          "description": "Conducted data visualization workshop using PowerBI at Christ University, Bengaluru for 300+ students.",
+          "type": "professional",
+          "students": 300
+        },
+        {
+          "date": "Oct 2024",
+          "title": "Azure Computing at RNSIT University",
+          "description": "Delivered lectures on Azure compute practices at RNSIT University, Bengaluru to 150+ students, leading a team of 10 trainers.",
+          "type": "professional",
+          "students": 150
+        }
+      ]
+    },
+    {
+      "city": "Chandigarh",
+      "state": "Chandigarh",
+      "lat": 30.7333,
+      "lng": 76.7794,
+      "visits": [
+        {
+          "date": "Dec 2023",
+          "title": "Data Analytics Workshop",
+          "description": "Delivered 2-day workshop on data analytics and development at Chandigarh University for 500+ students.",
+          "type": "professional",
+          "students": 500
+        },
+        {
+          "date": "Nov 2025",
+          "title": "Cybersecurity & Cloud Workshop at Chandigarh University",
+          "description": "Delivered workshops on Cybersecurity and Cloud Computing at Chandigarh University.",
+          "type": "professional",
+          "students": 150
+        }
+      ]
+    },
+    {
+      "city": "Coimbatore",
+      "state": "Tamil Nadu",
+      "lat": 11.0168,
+      "lng": 76.9558,
+      "visits": [
+        {
+          "date": "Feb 2024",
+          "title": "Django Framework Training",
+          "description": "Conducted 15-day training on Django framework and web development using Python for 150+ students.",
+          "type": "professional",
+          "students": 150
+        }
+      ]
+    },
+    {
+      "city": "Sonepat",
+      "state": "Haryana",
+      "lat": 28.9936,
+      "lng": 77.0151,
+      "visits": [
+        {
+          "date": "March 2024",
+          "title": "Python & ML Workshop (IIT Roorkee)",
+          "description": "Delivered 5-day workshop on Python and Machine Learning under IIT Roorkee's student development program at DCRUST University.",
+          "type": "professional",
+          "students": 150
+        }
+      ]
+    },
+    {
+      "city": "Ghaziabad",
+      "state": "Uttar Pradesh",
+      "lat": 28.6692,
+      "lng": 77.4538,
+      "visits": [
+        {
+          "date": "May-June 2024",
+          "title": "PowerBI & Azure Sessions at Jaipuria and Noida International University",
+          "description": "Took sessions at Jaipuria, Ghaziabad and Noida International University for PowerBI and Azure resources.",
+          "type": "professional",
+          "students": 200
+        },
+        {
+          "date": "Feb 2026",
+          "title": "Data Analytics for Professionals at Data Mites",
+          "description": "Delivered data analytics sessions to professionals transitioning their careers at Data Mites, Vaishali.",
+          "type": "professional",
+          "students": 20
+        }
+      ]
+    },
+    {
+      "city": "Mathura",
+      "state": "Uttar Pradesh",
+      "lat": 27.4924,
+      "lng": 77.6737,
+      "visits": [
+        {
+          "date": "Nov 2024",
+          "title": "Cyber Security Training",
+          "description": "Conducted 5-day training on Cyber Security Analyst domain at GLA University, Mathura.",
+          "type": "professional",
+          "students": 80
+        },
+        {
+          "date": "March 2025",
+          "title": "DevOps Sessions at GLA University",
+          "description": "Delivered DevOps sessions at GLA University, Mathura.",
+          "type": "professional",
+          "students": 80
+        }
+      ]
+    },
+    {
+      "city": "Faridabad",
+      "state": "Haryana",
+      "lat": 28.4089,
+      "lng": 77.3178,
+      "visits": [
+        {
+          "date": "Jan 2025",
+          "title": "Azure Services Workshop",
+          "description": "Delivered 3-week training on Azure Services at Manav Rachna University, Faridabad.",
+          "type": "professional",
+          "students": 150
+        }
+      ]
+    },
+    {
+      "city": "Warangal",
+      "state": "Telangana",
+      "lat": 18.0000,
+      "lng": 79.5833,
+      "visits": [
+        {
+          "date": "June 2025",
+          "title": "Python DSA and Data Analytics Training",
+          "description": "Trained students over Python DSA and Data Analytics.",
+          "type": "professional",
+          "students": 500
+        }
+      ]
+    },
+    {
+      "city": "Vishakhapatnam",
+      "state": "Andhra Pradesh",
+      "lat": 17.6868,
+      "lng": 83.2185,
+      "visits": [
+        {
+          "date": "June 2025",
+          "title": "AI & Computing for School Students",
+          "description": "Delivered AI and Computing sessions to school students (9th-12th grade), nurturing curiosity in technology.",
+          "type": "professional",
+          "students": 200
+        }
+      ]
+    },
+    {
+      "city": "Kanpur",
+      "state": "Uttar Pradesh",
+      "lat": 26.4499,
+      "lng": 80.3319,
+      "visits": [
+        {
+          "date": "July-Nov 2025",
+          "title": "Data Analytics Program at PSIT",
+          "description": "Conducted 4-month program on Python for Data Analytics at PSIT for 1000+ students.",
+          "type": "professional",
+          "students": 1000
+        }
+      ]
+    },
+    {
+      "city": "Indore",
+      "state": "Madhya Pradesh",
+      "lat": 22.7196,
+      "lng": 75.8577,
+      "visits": [
+        {
+          "date": "Nov 2025",
+          "title": "Advance Python and WebSockets Faculty Development Program",
+          "description": "Trained 15+ faculties with advance Python techniques and WebSockets.",
+          "type": "professional",
+          "students": 15
+        }
+      ]
+    },
+    {
+      "city": "Gurgaon",
+      "state": "Haryana",
+      "lat": 28.4595,
+      "lng": 77.0266,
+      "visits": [
+        {
+          "date": "March 2026",
+          "title": "First Full-time Job at Carelon Global Solutions",
+          "description": "Joining Carelon Global Solutions LLP as Associate Software Developer.",
+          "type": "professional",
+          "students": null
+        }
+      ]
+    }
+  ]
+}
