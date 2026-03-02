@@ -13,7 +13,8 @@ const contactInfo = {
     github: "https://github.com/Aditypratap",
     twitter: "https://x.com/AdityaPratap02",
     instagram: "https://www.instagram.com/pratapsingh60"
-  }
+  },
+  calendar: "https://cal.com/pratapsingh60/30min"
 }
 
 export default function Footer() {
@@ -30,8 +31,6 @@ export default function Footer() {
     e.preventDefault()
     setIsSubmitting(true)
     
-    // Here you would integrate with your backend service
-    // For now, just simulate a submission
     setTimeout(() => {
       setIsSubmitting(false)
       setSubmitStatus('success')
@@ -63,9 +62,9 @@ export default function Footer() {
           </h2>
 
           {/* Two Column Layout */}
-          <div className="grid md:grid-cols-2 gap-6 md:gap-8">
+          <div className="grid md:grid-cols-2 gap-6 md:gap-8 mb-12"> {/* Added mb-12 here */}
             
-            {/* Left Column - Contact Info */}
+            {/* Left Column - Contact Info & Calendar Button */}
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -127,7 +126,7 @@ export default function Footer() {
 
               {/* Social Links */}
               <h4 className="text-lg font-semibold text-white mb-4">Follow Me</h4>
-              <div className="flex gap-4">
+              <div className="flex gap-4 mb-8">
                 <a 
                   href={contactInfo.social.linkedin}
                   target="_blank"
@@ -189,6 +188,30 @@ export default function Footer() {
                   </svg>
                 </a>
               </div>
+
+              {/* Calendar Button */}
+              <div className="pt-6 border-t border-white/10">
+                <h4 className="text-lg font-semibold text-white mb-3 flex items-center gap-2">
+                  <svg className="w-5 h-5 text-purple-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5" />
+                  </svg>
+                  Schedule a Meeting
+                </h4>
+                <p className="text-sm text-white/40 mb-4">
+                  Book a 30-min slot directly on my calendar.
+                </p>
+                <a 
+                  href={contactInfo.calendar}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full inline-flex items-center justify-center gap-2 py-3 px-4 bg-gradient-to-r from-purple-500/10 to-blue-500/10 border border-purple-500/20 rounded-xl text-white hover:from-purple-500/20 hover:to-blue-500/20 transition-all group"
+                >
+                  <svg className="w-4 h-4 text-purple-400 group-hover:rotate-12 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                  </svg>
+                  <span className="text-sm font-medium">Select Date & Time</span>
+                </a>
+              </div>
             </motion.div>
 
             {/* Right Column - Contact Form */}
@@ -202,11 +225,8 @@ export default function Footer() {
               <h3 className="text-2xl font-bold text-white mb-6">Send a Message</h3>
               
               <form onSubmit={handleSubmit} className="space-y-5">
-                {/* Name Field */}
                 <div>
-                  <label htmlFor="name" className="block text-sm text-white/60 mb-2">
-                    Name
-                  </label>
+                  <label htmlFor="name" className="block text-sm text-white/60 mb-2">Name</label>
                   <input
                     type="text"
                     id="name"
@@ -219,11 +239,8 @@ export default function Footer() {
                   />
                 </div>
 
-                {/* Subject Field */}
                 <div>
-                  <label htmlFor="subject" className="block text-sm text-white/60 mb-2">
-                    Subject
-                  </label>
+                  <label htmlFor="subject" className="block text-sm text-white/60 mb-2">Subject</label>
                   <input
                     type="text"
                     id="subject"
@@ -236,11 +253,8 @@ export default function Footer() {
                   />
                 </div>
 
-                {/* Email Field */}
                 <div>
-                  <label htmlFor="email" className="block text-sm text-white/60 mb-2">
-                    Email
-                  </label>
+                  <label htmlFor="email" className="block text-sm text-white/60 mb-2">Email</label>
                   <input
                     type="email"
                     id="email"
@@ -253,11 +267,8 @@ export default function Footer() {
                   />
                 </div>
 
-                {/* Message Field */}
                 <div>
-                  <label htmlFor="message" className="block text-sm text-white/60 mb-2">
-                    Message
-                  </label>
+                  <label htmlFor="message" className="block text-sm text-white/60 mb-2">Message</label>
                   <textarea
                     id="message"
                     name="message"
@@ -270,11 +281,10 @@ export default function Footer() {
                   />
                 </div>
 
-                {/* Submit Button */}
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full py-3 bg-gradient-to-r from-amber-500 to-amber-600 text-white rounded-xl font-medium hover:from-amber-600 hover:to-amber-700 transition-all disabled:opacity-50 disabled:cursor-not-allowed relative overflow-hidden group"
+                  className="w-full py-3 bg-gradient-to-r from-amber-500 to-amber-600 text-white rounded-xl font-medium hover:from-amber-600 hover:to-amber-700 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   {isSubmitting ? (
                     <span className="flex items-center justify-center">
@@ -299,18 +309,18 @@ export default function Footer() {
             </motion.div>
           </div>
 
-          {/* Copyright */}
+          {/* Copyright - No extra spacing */}
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.3 }}
             viewport={{ once: true }}
-            className="text-center mt-16 pt-8 border-t border-white/10"
+            className="text-center border-t border-white/10 pt-6"
           >
             <p className="text-white/40 text-sm">
               © {new Date().getFullYear()} Aditya Pratap Singh. All rights reserved.
             </p>
-            <p className="text-white/20 text-xs mt-2">
+            <p className="text-white/20 text-xs mt-1"> {/* Reduced mt-2 to mt-1 */}
               Built with Next.js, Three.js, React Three Fiber, and Framer Motion
             </p>
           </motion.div>
